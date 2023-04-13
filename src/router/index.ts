@@ -52,7 +52,8 @@ const router = createRouter({
         {
           path: '/setup',
           name: 'setup',
-          component: SetupExample
+          component: SetupExample,
+          // props: true
         },
         {
           path: '/before-create',

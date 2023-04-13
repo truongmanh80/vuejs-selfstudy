@@ -3,6 +3,7 @@
   <header>
     <div class="wrapper">
       <nav>
+<!--        <setup-example title="book"></setup-example>-->
         <router-link to="/setup">setup</router-link>
         <router-link to="/before-create">before-create</router-link>
         <router-link to="/create">create</router-link>
@@ -15,14 +16,13 @@
     </div>
   </header>
   <router-view></router-view>
-
 </template>
 
 <script>
 import Author from "@/components/Author.vue";
-
+import SetupExample from "@/components/hookexamples/SetupExample.vue";
 export default {
-  components: {Author},
+  components: {SetupExample, Author},
 
   /**
    * setup hook

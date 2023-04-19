@@ -46,6 +46,8 @@ export default {
 
     console.log(props.title)
 
+    console.log(title)
+
     // object or array
     const state = reactive({
       first_name: 'John',

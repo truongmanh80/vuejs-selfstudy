@@ -14,7 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/second">Second</RouterLink>
         <RouterLink to="/third">Third</RouterLink>
-        <RouterLink to="/form">Form</RouterLink>
+        <RouterLink to="/element-plus">ElementPlus</RouterLink>
         <RouterLink to="/hook">Hook</RouterLink>
 <!--        <RouterLink to="/hook/setup">Setup</RouterLink>-->
 <!--        <RouterLink to="/hook/before-update">BeforeUpdate</RouterLink>-->

@@ -4,7 +4,9 @@
     <div class="wrapper">
       <nav>
 <!--        <setup-example title="book"></setup-example>-->
-        <router-link to="/setup">setup</router-link>
+        <router-link to="/setup">
+          <el-button>setup</el-button>
+        </router-link>
         <router-link to="/before-create">before-create</router-link>
         <router-link to="/create">create</router-link>
         <router-link to="/before-mount">before-mount</router-link>
@@ -15,7 +17,7 @@
       </nav>
     </div>
   </header>
-  <router-view></router-view>
+  <router-view v-if="$route.name === 'setup'" :title="author"></router-view>
 </template>
 
 <script>
@@ -44,8 +46,9 @@ export default {
    */
   data() {
     console.log("I'm data hook!!!")
+    let author = "Manh";
     return {
-      name: ''
+      author
     }
   },
 
@@ -114,6 +117,19 @@ export default {
    *    serverPrefetch : SSR only
    *
    */
+
+  /**
+   * new function
+   */
+  // shareData() {
+  //   this.$router.push({
+  //     path: '/setup',
+  //     name: 'setup',
+  //     params: {
+  //       this.$data: 'book'
+  //     }
+  //   })
+  // }
 }
 
 </script>
